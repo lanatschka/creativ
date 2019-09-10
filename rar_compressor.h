@@ -1,9 +1,9 @@
 #ifndef RAR_COMPRESSOR_H
 #define RAR_COMPRESSOR_H
 
-#include "compressor.h"
+#include "compression.h"
 
-class RAR_Compressor : public Compressor
+class RAR_Compressor : public Compression
 {
 public:
     RAR_Compressor();

@@ -1,14 +1,17 @@
 #ifndef COMPRESSOR_H
 #define COMPRESSOR_H
 
-#include <iostream>
+#include "compression.h"
 
 class Compressor
 {
+private:
+    Compression *p;
 public:
-    Compressor();
+    Compressor(Compression *alg);
     ~Compressor();
-    virtual void compress() = 0;
+    void compress();
+
 };
 
 #endif // COMPRESSOR_H
